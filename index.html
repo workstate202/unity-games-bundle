@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>16 Unity Games - Play the Web Demos</title>
+<meta name="description" content="Play all 16 Unity mobile games in your browser. No install needed.">
+<style>
+@font-face { font-family: "Lilita One"; src: url("LilitaOne.ttf") format("truetype"); font-display: swap; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1d2440;
+  background: linear-gradient(180deg, #4b6bff 0%, #7a4dff 420px, #f2f4fb 420px);
+  min-height: 100vh;
+}
+header { text-align: center; padding: 44px 16px 28px; color: #fff; }
+h1 {
+  font-family: "Lilita One", "Segoe UI", sans-serif; font-weight: 400;
+  font-size: clamp(34px, 7vw, 64px); line-height: 1.05; margin: 0 0 10px;
+  text-shadow: 0 4px 0 rgba(0,0,0,.18);
+}
+h1 span { color: #ffd84a; }
+header p { margin: 0 auto; max-width: 620px; font-size: clamp(15px, 2.4vw, 19px); opacity: .95; }
+.badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 18px; }
+.badges b {
+  font-weight: 600; font-size: 13px; letter-spacing: .3px;
+  background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.35);
+  padding: 6px 12px; border-radius: 999px;
+}
+main {
+  max-width: 1120px; margin: 0 auto; padding: 8px 16px 48px;
+  display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+.card {
+  background: #fff; border-radius: 22px; padding: 18px 16px 16px; text-align: center;
+  text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;
+  box-shadow: 0 8px 22px rgba(30, 40, 90, .14); transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(30, 40, 90, .22); outline: none; }
+.icon {
+  width: 132px; height: 132px; border-radius: 28px; overflow: hidden; flex: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,.18); background: #e6e9f5;
+  display: flex; align-items: center; justify-content: center;
+}
+.icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.icon.text {
+  font-family: "Lilita One", "Segoe UI", sans-serif; color: #fff; font-size: 24px; line-height: 1.05; padding: 10px;
+  text-shadow: 0 2px 0 rgba(0,0,0,.2);
+}
+.t1 { background: linear-gradient(135deg, #ffb347, #ff7a3d); }
+.t2 { background: linear-gradient(135deg, #5fd0ff, #3d7bff); }
+.t3 { background: linear-gradient(135deg, #7be07b, #1fae6b); }
+.card h2 { font-family: "Lilita One", "Segoe UI", sans-serif; font-weight: 400; font-size: 23px; margin: 14px 0 2px; }
+.card p { margin: 0 0 14px; font-size: 14px; color: #6a7190; }
+.play {
+  margin-top: auto; width: 100%; padding: 11px 0; border-radius: 14px;
+  font-family: "Lilita One", "Segoe UI", sans-serif; font-size: 19px; letter-spacing: .5px; color: #fff;
+  background: linear-gradient(180deg, #3fd66b, #1faa4b); box-shadow: 0 4px 0 #15803a;
+}
+@media (max-width: 540px) {
+  main { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 4px 12px 40px; }
+  .card { padding: 14px 10px 12px; border-radius: 18px; }
+  .icon { width: 96px; height: 96px; border-radius: 22px; }
+  .icon.text { font-size: 18px; }
+  .card h2 { font-size: 18px; }
+  .card p { font-size: 13px; margin-bottom: 10px; }
+  .play { font-size: 17px; padding: 9px 0; }
+}
+footer { text-align: center; padding: 0 16px 40px; font-size: 13px; color: #7a819e; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span>16</span> Unity Games</h1>
+  <p>Tap a game to play its demo right in your browser. No install needed.</p>
+  <div class="badges"><b>16 COMPLETE PROJECTS</b><b>UNITY 6</b><b>ANDROID + iOS</b><b>ADMOB + IAP</b><b>LEVEL EDITORS</b></div>
+</header>
+<main>
+  <a class="card" href="https://workstate202.github.io/cannon-carnival/" target="_blank" rel="noopener"><div class="icon"><img src="icons/cannon-carnival.png" alt="Cannon Carnival icon" width="132" height="132"></div><h2>Cannon Carnival</h2><p>3D cannon shooter</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/cube-blast-puzzle/" target="_blank" rel="noopener"><div class="icon"><img src="icons/cube-blast-puzzle.png" alt="Cube Blast Puzzle icon" width="132" height="132"></div><h2>Cube Blast Puzzle</h2><p>Cube blast puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/knit-away/" target="_blank" rel="noopener"><div class="icon"><img src="icons/knit-away.png" alt="Knit Away icon" width="132" height="132"></div><h2>Knit Away</h2><p>Yarn puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/bus-sand-rush/" target="_blank" rel="noopener"><div class="icon text t1">Bus Sand Rush</div><h2>Bus Sand Rush</h2><p>Sand puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/rotate-rings/" target="_blank" rel="noopener"><div class="icon text t2">Ring Twist</div><h2>Ring Twist</h2><p>Unlock puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/truck-loop-sort/" target="_blank" rel="noopener"><div class="icon text t3">Truck Loop Sort</div><h2>Truck Loop Sort</h2><p>3D sort puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/Bus-Loop-Sort/" target="_blank" rel="noopener"><div class="icon"><img src="icons/bus-loop-sort.png" alt="Bus Loop Sort icon" width="132" height="132"></div><h2>Bus Loop Sort</h2><p>Color sort puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/ant-picnic-game/" target="_blank" rel="noopener"><div class="icon"><img src="icons/ant-picnic.png" alt="Ant Picnic icon" width="132" height="132"></div><h2>Ant Picnic</h2><p>Ant puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/yarn-sort-factory/" target="_blank" rel="noopener"><div class="icon"><img src="icons/yarn-sort-factory.png" alt="Yarn Sort Factory icon" width="132" height="132"></div><h2>Yarn Sort Factory</h2><p>Yarn sort puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/trash-tycoon-rush/" target="_blank" rel="noopener"><div class="icon"><img src="icons/trash-tycoon-rush.png" alt="Trash Tycoon Rush icon" width="132" height="132"></div><h2>Trash Tycoon Rush</h2><p>Idle tycoon</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/color-bottle-pour/" target="_blank" rel="noopener"><div class="icon"><img src="icons/color-bottle-pour.png" alt="Color Bottle Pour icon" width="132" height="132"></div><h2>Color Bottle Pour</h2><p>Color pour puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/sand-bucket-rush/" target="_blank" rel="noopener"><div class="icon"><img src="icons/sand-bucket-rush.png" alt="Sand Bucket Rush icon" width="132" height="132"></div><h2>Sand Bucket Rush</h2><p>Sand puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/marble-pipe-rush/" target="_blank" rel="noopener"><div class="icon"><img src="icons/marble-pipe-rush.png" alt="Marble Pipe Rush icon" width="132" height="132"></div><h2>Marble Pipe Rush</h2><p>Marble sort puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/sushi-belt-rush/" target="_blank" rel="noopener"><div class="icon"><img src="icons/sushi-belt-rush.png" alt="Sushi Belt Rush icon" width="132" height="132"></div><h2>Sushi Belt Rush</h2><p>Conveyor puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/glass-bottle-sort-game/" target="_blank" rel="noopener"><div class="icon"><img src="icons/glass-bottle-sort.png" alt="Glass Bottle Sort icon" width="132" height="132"></div><h2>Glass Bottle Sort</h2><p>Bottle sort puzzle</p><span class="play">PLAY</span></a>
+  <a class="card" href="https://workstate202.github.io/bubble-fish-rush/" target="_blank" rel="noopener"><div class="icon"><img src="icons/bubble-fish-rush.png" alt="Bubble Fish Rush icon" width="132" height="132"></div><h2>Bubble Fish Rush</h2><p>Fish sort puzzle</p><span class="play">PLAY</span></a>
+</main>
+<footer>These are browser demos. The bundle contains the full Unity project of every game.</footer>
+</body>
+</html>
